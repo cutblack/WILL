@@ -13,7 +13,17 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  var numeronormal = num.toString()
+  var numerosimetrico = ""
+  for(var i=0; i<numeronormal.length; i++){
+    numerosimetrico = numeronormal.charAt(i) + numerosimetrico
+  }
+  if(numeronormal === numerosimetrico){
+    return true
+  }
+  else{
+    return false
+  }
 }
 
 // No modifiques nada debajo de esta linea //
